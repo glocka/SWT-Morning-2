@@ -13,6 +13,10 @@
         <action
             android:id="@+id/action_mainMenuFragment_to_TicTacToeMenu"
             app:destination="@id/TicTacToeMenuFragment" />
+
+        <action
+            android:id="@+id/action_mainMenuFragment_to_HangmanMenu"
+            app:destination="@id/HangmanMenuFragment" />
     </fragment>
 
     <fragment
@@ -28,6 +32,33 @@
             android:id="@+id/action_Menu_to_MainMenu"
             app:destination="@id/mainMenuFragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/HangmanMenuFragment"
+        android:name="com.swt20.swt_morning2.HangmanMenuFragment"
+        android:label="@string/ttt_menu_fragment_label"
+        tools:layout="@layout/hangman_menu">
+
+        <action
+            android:id="@+id/action_Menu_to_Game"
+            app:destination="@id/HangmanGameFragment" />
+        <action
+            android:id="@+id/action_Menu_to_MainMenu"
+            app:destination="@id/mainMenuFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/HangmanGameFragment"
+        android:name="com.swt20.swt_morning2.HangmanGameFragment"
+        android:label="@string/ttt_menu_fragment_label"
+        tools:layout="@layout/hangman_game">
+
+        <action
+            android:id="@+id/action_HangmanGameFragment_to_HangmanMenuFragment"
+            app:destination="@id/HangmanMenuFragment" />
+    </fragment>
+
+
     <fragment
         android:id="@+id/TicTacToeGameFragment"
         android:name="com.swt20.swt_morning2.TicTacToeGameFragment"

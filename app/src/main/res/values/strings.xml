@@ -15,5 +15,8 @@
     <string name="tic_tac_toe_text">Tic Tac Toe</string>
     <string name="hangman_text">Hangman</string>
     <string name="white_tiles_text">Don\'t touch the white tiles</string>
+    <string name="hangman_question_guess">Enter your guess:</string>
+    <string name="hangman_question_txt">guess?</string>
+    <string name="hangman_WIN">\"Congratulations. You won!\"</string>
 
 </resources>
